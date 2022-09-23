@@ -80,9 +80,10 @@
                 font-size: 0.8rem;
                 color: $header-color;
                 display: flex;
+                flex-wrap: wrap;
 
                 .tech {
-                    width: 80px;
+                    min-width: 30px;
                     box-sizing: border-box;
                     padding: 6px 8px;
                 }
