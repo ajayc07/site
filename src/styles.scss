@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../src/app/shared/styles/variable.scss';
+@import '../src/app/shared/styles/scroll-bar.style.scss';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $body-background;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $body-color;
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn {
+    height: 40px;
+    min-width: 80px;
+    border: 1px solid $body-primary;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    padding: 4px 6px;
+
+    color: $body-primary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $body-primary-hover;
+        cursor: pointer;
+    }
+}
+
+.highlight {
+    color: $body-primary;
+}
+
+.connection-icon {
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+        stroke: $body-primary;
+        transform: scale(1.5);
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+.crumbs-title {
+
+    @media screen and (max-width: 600px) {
+        font-size: 1.8rem;
+        box-sizing: border-box;
+        padding: 0 16px;
+    }
+}

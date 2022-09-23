@@ -1,0 +1,81 @@
+@import '../../shared/styles/variable.scss';
+
+.crumbs-title {
+    color: $color-white-tint;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: flex-end;
+
+    &::before {
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: rgba(100, 255, 218, 0.1019607843);
+        position: relative;
+        top: 20px;
+        left: -25px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &::before {
+            width: 50%;
+        }
+    }
+}
+
+.about-container {
+    display: flex;
+    font-size: 1rem;
+
+    .about-me {
+        width: 50%;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    .about-me-img {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    .course-list {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 90px;
+        width: 400px;
+
+        margin: 0 40px;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin: unset;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 18px;
+        }
+
+        li {
+            height: 30px;
+            width: 180px;
+
+            &::before {
+                content: "\2686";
+                color: $body-primary;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

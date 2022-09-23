@@ -1,0 +1,71 @@
+@import '../../shared/styles/variable.scss';
+
+.crumbs-title {
+    color: $color-white-tint;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: flex-start;
+
+    &::after {
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: #64ffda1a;
+        position: relative;
+        top: 25px;
+        right: 0;
+        right: -25px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &::after {
+            width: 50%;
+        }
+    }
+}
+
+.greet {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+    @media screen and (max-width: 600px) {
+        justify-content: flex-start;
+        min-height: unset;
+    }
+
+    h2 {
+        margin-bottom: 4rem;
+        
+        @media screen and (max-width: 600px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .btn-container {
+        
+        width: 200px;
+
+        .btn {
+            height: 60px;
+            width: 180px;
+            text-decoration: unset;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    width: 200px;
+    margin-top: 40px;
+    justify-content: space-between;
+
+    li > svg {
+        min-width: 50px;
+        cursor: pointer;
+    }
+}

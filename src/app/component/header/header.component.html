@@ -1,0 +1,18 @@
+<header>
+    <div class="logo">
+
+    </div>
+
+    <div class="hamburger-icon" (click)="showOptionPanel = true">
+        <div class="strip">&#9776;</div>
+    </div>
+
+    <ul class="options" [class.show]="showOptionPanel">
+        <li class="header-option" (click)="scrollTo('aboutComponent')">About</li>
+        <li class="header-option" (click)="scrollTo('experienceComponent')">Experience</li>
+        <li class="header-option" (click)="scrollTo('workComponent')">Work</li>
+        <li class="header-option" (click)="scrollTo('contactComponent')">Contact</li>
+        <li class="btn resume">Resume</li>
+        <li class="close-btn" *ngIf="showOptionPanel" (click)="showOptionPanel = false">&#9932;</li>
+    </ul>
+</header>

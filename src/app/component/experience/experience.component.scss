@@ -1,0 +1,112 @@
+@import '../../shared/styles/variable.scss';
+
+.crumbs-title {
+    color: $color-white-tint;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: flex-start;
+
+    &::after {
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: #64ffda1a;
+        position: relative;
+        top: 25px;
+        right: 0;
+        right: -25px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &::after {
+            width: 35%;
+        }
+    }
+}
+
+.experience {
+    display: flex;
+    padding-top: 12px;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    .stepper {
+
+        .company {
+
+            li {
+                min-width: 100px;
+                display: flex;
+                align-items: center;
+                padding: 12px;
+                border-left: 3px solid #64ffda1a;
+
+                cursor: pointer;
+
+                &.selected {
+                    border-color: $body-primary;
+                    color: $body-primary;
+                    background-color: $body-primary-hover;
+                }
+
+                &:hover {
+                    color: $body-primary;
+                    background-color: $body-primary-selected;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                display: flex;
+                margin-bottom: 12px;
+
+                li {
+                    padding: 8px;
+                    border-left: 0;
+                    border-bottom: 3px solid #64ffda1a;
+                    justify-content: center;
+                }
+            }
+
+        }
+    }
+
+    .work-description {
+        margin: 0 32px;
+        min-height: 235px;
+
+        .title {
+            margin-bottom: 6px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $color-white;
+        }
+
+        .period {
+            margin-bottom: 12px;
+        }
+
+        .responsibility {
+            li {
+                &::before {
+                    content: "\261B";
+                    color: $body-primary;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-right: 1rem;
+
+                    @media screen and (max-width: 600px) {
+                        margin-right: unset;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            margin: 0 8px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<h2 class="crumbs-title">Work History</h2>
+
+<section class="experience">
+    <aside class="stepper">
+        <ul class="company">
+            <li *ngFor="let name of companyNames; let i = index" [class.selected]="i === selectedExperienceIndex"
+                (click)="selectedExperienceIndex = i">
+                {{name}}
+            </li>
+        </ul>
+    </aside>
+    <aside class="work-description">
+
+        <div class="title">
+            {{experienceData[selectedExperienceIndex].title}}
+            <span class="highlight">@ {{experienceData[selectedExperienceIndex].companyName}} </span>
+        </div>
+
+        <div class="period"> {{experienceData[selectedExperienceIndex].period}}</div>
+
+        <ul class="responsibility">
+            <li *ngFor="let responsibility of (experienceData[selectedExperienceIndex].responsibility)">
+                {{responsibility}}
+            </li>
+        </ul>
+    </aside>
+</section>
