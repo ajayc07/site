@@ -21,7 +21,8 @@ export class ExperienceComponent implements OnInit {
         "Decreased development time to 50% by overhauling the requirement.",
         "Remodeled the exciting architecture with the Angular workspace approach to handle complex scenarios.",
         "Revitalized flash application to angular web application"
-      ]
+      ],
+      companyLinkedInUrl: 'https://www.linkedin.com/company/lightnwonderindia/about/'
     },
     {
       companyName: 'QBurst',
@@ -34,7 +35,8 @@ export class ExperienceComponent implements OnInit {
         "Engaged In software maintenance across the application.",
         "Developed and implemented proactive maintenance practices.",
         "Trained and managed junior engineers.",
-      ]
+      ],
+      companyLinkedInUrl: 'https://www.linkedin.com/company/qburst/about/'
     },
     {
       companyName: 'Infosys',
@@ -45,7 +47,8 @@ export class ExperienceComponent implements OnInit {
         "Standardized all output with a new, responsive, mobile-first approach and strategy.",
         "Collaborated with team members to implement new feature developments.",
         "Coordinating with back-end developers for integrating API responses to front end."
-      ]
+      ],
+      companyLinkedInUrl: 'https://www.linkedin.com/company/infosys/about/'
     }
   ];
 

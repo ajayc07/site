@@ -13,7 +13,12 @@
 
         <div class="title">
             {{experienceData[selectedExperienceIndex].title}}
-            <span class="highlight">@ {{experienceData[selectedExperienceIndex].companyName}} </span>
+            <span class="highlight">
+                <a [href]="experienceData[selectedExperienceIndex].companyLinkedInUrl" target="_blank"
+                    rel="noopener noreferrer">
+                    @ {{experienceData[selectedExperienceIndex].companyName}}
+                </a>
+            </span>
         </div>
 
         <div class="period"> {{experienceData[selectedExperienceIndex].period}}</div>

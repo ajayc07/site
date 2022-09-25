@@ -48,6 +48,11 @@
             box-sizing: border-box;
             padding: 0 16px;
 
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+    
+
             .icons {
 
                 width: 100%;

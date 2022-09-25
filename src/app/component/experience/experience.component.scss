@@ -44,6 +44,9 @@
                 padding: 12px;
                 border-left: 3px solid #64ffda1a;
 
+                display: flex;
+                flex: 1;
+
                 cursor: pointer;
 
                 &.selected {
@@ -60,7 +63,8 @@
 
             @media screen and (max-width: 600px) {
                 display: flex;
-                margin-bottom: 12px;
+                margin-bottom: 24px;
+                font-size: 1.3rem;
 
                 li {
                     padding: 8px;
