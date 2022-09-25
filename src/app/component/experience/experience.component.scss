@@ -38,7 +38,7 @@
         .company {
 
             li {
-                min-width: 100px;
+                min-width: 150px;
                 display: flex;
                 align-items: center;
                 padding: 12px;
@@ -64,9 +64,10 @@
             @media screen and (max-width: 600px) {
                 display: flex;
                 margin-bottom: 24px;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
 
                 li {
+                    min-width: 100px;
                     padding: 8px;
                     border-left: 0;
                     border-bottom: 3px solid #64ffda1a;
